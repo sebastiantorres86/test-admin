@@ -10,20 +10,20 @@ import {
   Edit,
   Create,
   SimpleForm,
-  Filter,
+  //Filter,
   ReferenceInput,
   SelectInput,
   TextInput,
 } from "react-admin";
 
-const PostFilter = (props) => (
+/* const PostFilter = (props) => (
   <Filter {...props}>
     <TextInput label="Search" source="q" alwaysOn />
     <ReferenceInput label="user" source="userId" reference="users" allowEmpty>
       <SelectInput optionText="name" />
     </ReferenceInput>
   </Filter>
-);
+); */
 
 export const PostList = (props) => {
   const isSmall = useMediaQuery((theme) => theme.breakpoints.down("sm"));
